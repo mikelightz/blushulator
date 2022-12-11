@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Lobster&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-grid">
+        <div id="display" class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand">0</div>
+        </div>
+        <button data-all-clear id="clear" class="span-two">AC</button>
+        <button data-delete id="delete">DEL</button>
+        <button data-operation id="divide">÷</button>
+        <button data-number id="one">1</button>
+        <button data-number id="two">2</button>
+        <button data-number id="three">3</button>
+        <button data-operation id="multiply">*</button>
+        <button data-number id="four">4</button>
+        <button data-number id="five">5</button>
+        <button data-number id="six">6</button>
+        <button data-operation id="add">+</button>
+        <button data-number id="seven">7</button>
+        <button data-number id="eight">8</button>
+        <button data-number id="nine">9</button>
+        <button data-operation id="subtract">-</button>
+        <button data-number id="decimal">.</button>
+        <button data-number id="zero">0</button>
+        <button data-equals id="equals" class="span-two">=</button>
+      </div>
+      <h2>Blushulator by Mike Lightz</h2>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

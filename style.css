@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, rgb(214, 176, 215), rgb(246, 162, 224));
+}
+
+h2 {
+  font-family: "lobster", "consolas", "sans-serif";
+  color: rgb(252, 218, 224);
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+  -webkit-text-stroke: 1px rgb(239, 189, 198);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  border-radius: 4px;
+  padding-top: 2rem;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px, solid #ffffff;
+  outline: none;
+  background-color: rbga(255, 255, 255, 0.75);
+  transition-duration: 0.3s;
+  border-radius: 15px;
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(242, 205, 240, 0.8);
+}
+
+.calculator-grid > button:active {
+  background-color: #f2f8f2;
+  transform: translateY(3px);
+}
+
+.span-two {
+  grid-column: span 2;
+  color: rgba(104, 18, 99, 0.8);
+  background-color: rgba(252, 179, 248, 0.8);
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(233, 138, 217, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 15px;
+}
+
+.output .previous-operand {
+  color: rgba(139, 60, 135, 0.8);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(255, 192, 203, 0.3);
+}
+
+.output .current-operand {
+  color: rgba(104, 18, 99, 0.8);
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 4px rgba(255, 192, 203, 0.758);
+}
